@@ -1,0 +1,22 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Form";
+}
+
+
+
+
+<form method="post" asp-controller="Employees" asp-action="Index">
+    <label>Name</label>
+    <input type="text" asp-for="Name"
+        data-val=" true"
+           data-val-name="The Email Address field is not a valid email address."
+           data-val-required="The Email Address field is required." name="Name" />
+
+    <textarea maxlength="1000" ></textarea>
+    @Html.TextArea("employeed");
+
+           <button type="submit" onloadeddata="alert" >sumbit</button>
+
+</form>
